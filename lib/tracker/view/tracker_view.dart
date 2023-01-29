@@ -32,7 +32,7 @@ class TrackerView extends StatelessWidget {
             double _balance = TrackerCubit().doubleBalance(state);
             Color? color = _balance < 0 ? Colors.red : null;
             String stringAmount = _balance == 0
-                ? '-       '
+                ? '-      '
                 : '₱' + _balance.abs().toStringAsFixed(2);
 
             return Column(
